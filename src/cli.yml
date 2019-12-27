@@ -1,0 +1,66 @@
+name: Rust helper for CP
+version: "1.0"
+author: dranikpg.com
+
+subcommands:
+    - check:
+        about: checker
+        args:
+            - t:
+                short: t
+                long: tests
+                value_name: N
+                help: Test count
+            - g:
+                short: g
+                long: gen
+                value_name: path
+                help: generator path
+                required: true
+            - s:
+                short: s
+                long: solve
+                value_name: path
+                help: solve path
+                required: true
+            - b:
+                short: b
+                long: brute
+                value_name: path
+                help: brute path
+                required: true
+            - o:
+                short: o
+                long: out
+                value_name: path
+                help: output dir
+    - opentest:
+        about: opentest runner
+        args:
+            - fd:
+                short: f
+                long: folder
+                value_name: folder
+                help: run folder (out/in)
+                required: true
+            - s:
+                short: s
+                long: solve
+                value_name: path
+                help: solve path
+                required: true
+            - out:
+                short: out
+                long: out
+                value_name: output format
+                help: output format
+            - b: 
+                short: b
+                long: begin
+                value_name: unsigned int
+                help: begin bound
+            - e: 
+                short: e
+                long: end
+                value_name: unsigned int
+                help: end bound
