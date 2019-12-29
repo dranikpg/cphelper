@@ -64,3 +64,8 @@ subcommands:
                 long: end
                 value_name: unsigned int
                 help: end bound
+            - t: 
+                short: t
+                long: threads
+                value_name: unsigned int
+                help: threads
